@@ -16,7 +16,7 @@ const styles = {
         m: 2,
         pb: 1,
         maxWidth: "412px",
-        boxShadow: "0px 5px 83px 0px rgba(40, 40, 40, 0.06)",
+        boxShadow: "none",
         transition: "0.3s ease-in-out",
         borderRadius: '1rem',
         ":hover img": {
@@ -125,7 +125,7 @@ const TeamCard = ({ item }) => (
             <Typography variant='h4'>{item.name}</Typography>
             <Typography component={Link} to={item.url} variant='underline2'>{item.category}</Typography>
             <Typography mt={1} color={'#8790a2'} >
-                {item.desc} <PrimaryLink>{cta}</PrimaryLink>
+                {item.desc} <PrimaryLink sx={{display: 'block'}}>{cta}</PrimaryLink>
             </Typography>
         </CardContent>
     </Card>

@@ -2,6 +2,8 @@ export default {
   mode: "light",
   black: "#000",
   white: "#fff",
+  gry: "#f9f9f9",
+
   primary: {
     main: "#13c5dd",
     light: '#e6f8fb',
