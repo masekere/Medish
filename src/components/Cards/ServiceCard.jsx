@@ -8,7 +8,7 @@ import PrimaryLink from 'components/PrimaryLink'
 const styles = {
     card: {
         // position: 'relative',
-        mt: 8,
+        // mt: 8,
         pb: 2,
         overflow: 'visible',
         maxWidth: "412px",
@@ -51,13 +51,9 @@ const styles = {
     }
 }
 
-
-export default function ServiceCard({ item }) {
-
-    // const { title, desc, img } = service
-
+export default function ServiceCard({ item, sx }) {
     return (
-        <MuiCard sx={styles.card}>
+        <MuiCard sx={{...styles.card, ...sx}}>
             <CardContent sx={styles.content}>
                 <Box borderRadius={'0 0 .5rem .5rem'} width={'max-content'} p={2} mt={'-16px'} bgcolor={'primary.light'}>
                     <item.icon sx={{ fontSize: 65 }} />

@@ -15,69 +15,97 @@ import { useState } from 'react'
 import { Link, useLocation } from "react-router-dom"
 import Button from 'components/button'
 
-const routes = {
-  about: {
-    path: 'about',
-    name: 'About Us'
-  },
-  doctors: {
-    path: 'doctors',
-    name: 'Doctors'
-  },
-  blog: {
-    path: 'blog',
-    name: 'Blog'
-  },
-  shop: {
-    path: 'shop',
-    name: 'Shop'
-  },
-  departments: {
-    path: 'departments',
-    name: 'Departments'
-  },
-  contact: {
-    path: 'contacts',
-    name: 'Contact'
-  },
-}
-
 const navigationLinks = [
   ['Departments', [
-    {
-      name: routes.departments.name,
-      path: routes.departments.path
-    }
+      {
+          name: 'our departments',
+          path: 'departments'
+      },
+      {
+          name: 'neurology clinic',
+          path: 'departments/neurology-clinic'
+      },
+      {
+          name: 'pathology clinic',
+          path: 'departments/pathology-clinic'
+      },
+      {
+          name: 'laboratory analysis',
+          path: 'departments/laboratory-analysis'
+      },
+      {
+          name: 'pediatric clinic',
+          path: 'departments/pediatric-clinic'
+      },
+      {
+          name: 'cardiac clinic',
+          path: 'departments/cardiac-clinic'
+      },
+      {
+          name: 'ophthalmology clinic',
+          path: 'departments/ophthalmology-clinic'
+      },
   ]],
   ['About Us', [
-    {
-      name: routes.about.name,
-      path: routes.about.path
-    }
+      {
+          name: 'about us',
+          path: 'about'
+      },
+      {
+          name: 'medical services',
+          path: 'about/medical-services'
+      },
+      {
+          name: 'pricing & plans',
+          path: 'about/pricing'
+      },
+      {
+          name: 'appointments',
+          path: 'about/appointments'
+      },
+      {
+          name: 'help & fAQs',
+          path: 'about/FAQ'
+      }
   ]],
   ['Doctors', [
-    {
-      name: routes.doctors.name,
-      path: routes.doctors.path
-    }
-  ]],
-  ['Blog', [
-    {
-      name: routes.blog.name,
-      path: routes.blog.path
-    }
+      {
+          name: 'our doctors',
+          path: 'doctors'
+      },
+      {
+          name: "doctor's timetable",
+          path: 'doctors/timetable'
+      },
   ]],
   ['Shop', [
-    {
-      name: routes.shop.name,
-      path: routes.shop.path
-    }
+      {
+          name: 'our products',
+          path: 'shop'
+      },
+      {
+          name: 'cart',
+          path: 'shop/cart'
+      },
+      {
+          name: 'checkout',
+          path: 'shop/checkout'
+      },
+      {
+          name: 'my account',
+          path: 'shop/my-account'
+      },
   ]],
   [{
-    path: 'contacts',
-    name: 'Contact'
+      name: 'blog',
+      path: 'blog'
+  }],
+  [{
+      path: 'contacts',
+      name: 'Contact'
   }],
 ]
+
 
 const drawerWidth = 240
 

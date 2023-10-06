@@ -4,10 +4,11 @@ import Box from '@mui/material/Box'
 import { Link } from 'react-router-dom'
 import Typography from '@mui/material/Typography'
 
-const Breadcrumbs = ({items}) => (
+const Breadcrumbs = ({items, sx}) => (
     <>
     <Box mt={2} />
     <MuiBreadcrumbs
+       className='Breadcrumbs'
       separator={<NavigateNextIcon fontSize="small" />}
       aria-label="breadcrumb"
       sx={{
@@ -26,6 +27,7 @@ const Breadcrumbs = ({items}) => (
         },
         position: 'absolute',
         bottom: 20,
+        ...sx
       }}
     >
       {

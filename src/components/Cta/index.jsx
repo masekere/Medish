@@ -1,7 +1,6 @@
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
-import Signature from 'components/Signature'
 import AdvantagesList from 'components/AdvantagesList'
 
 
@@ -18,7 +17,7 @@ const styles = {
     }
 }
 
-export default function About2() {
+export default function Cta() {
     return (
         <Container component={'section'} sx={styles.container} maxWidth="xxl">
             <Typography mb={3} variant="subtitle1">{content.subtitle}</Typography>

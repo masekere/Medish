@@ -1,4 +1,4 @@
-import { styled } from '@mui/material';
+import { styled, Typography, Box } from '@mui/material';
 import PropTypes from 'prop-types'
 import { useState } from 'react';
 import MuiAccordion from '@mui/material/Accordion';
@@ -28,7 +28,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     padding: theme.spacing(2),
 }));
 
-export default function Accordion({ items }) {
+export default function Accordion({ items, sx, py }) {
     const [expanded, setExpanded] = useState(null);
 
     const handleChange = (index) => (event, newExpanded) => {
@@ -39,16 +39,20 @@ export default function Accordion({ items }) {
         <RemoveIcon /> : <AddIcon />
 
 
-    return items.map((item, index) => (
-        <AccordionContainer key={index} expanded={expanded === index} onChange={handleChange(index)}>
-            <AccordionSummary expandIcon={<ExpandIcon index={index} />} aria-controls={`panel${index}-content`} id={`panel${index}-header`}>
-                {item.summary}
-            </AccordionSummary>
-            <AccordionDetails>
-                {item.details}
-            </AccordionDetails>
-        </AccordionContainer>
-    ))
+    return (
+        <Box sx={sx}>
+            {items.map((item, index) => (
+                <AccordionContainer sx={{py: py}} key={index} expanded={expanded === index} onChange={handleChange(index)}>
+                    <AccordionSummary expandIcon={<ExpandIcon index={index} />} aria-controls={`panel${index}-content`} id={`panel${index}-header`}>
+                        {item.summary}
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>{item.details}</Typography>
+                    </AccordionDetails>
+                </AccordionContainer>
+            ))}
+        </Box>
+    )
 }
 
 Accordion.propTypes = {

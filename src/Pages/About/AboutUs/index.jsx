@@ -1,10 +1,10 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Features from "./components/Features";
-import Donations from "./components/Donations";
 import Team from "./components/Team";
-import About2 from "./components/About2";
-import Process from "./components/Process";
+import Process from "components/Process";
+import Donations from "components/Donations";
+import Cta from "components/Cta";
 
 export function Component() {
     return (
@@ -14,7 +14,7 @@ export function Component() {
             <Features />
             <Donations />
             <Team />
-            <About2 />
+            <Cta />
             <Process />
         </>
     )

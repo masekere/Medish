@@ -5,6 +5,7 @@ import slider1 from 'assets/images/sliders/2.jpg'
 import Button from "components/button";
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import HeroSection from "components/HeroContainer";
+import PlayButton from 'components/button/PlayButton';
 
 const content = {
     h1: 'wide range of services for your family',
@@ -23,12 +24,7 @@ export default function Slider1() {
                 <Button variant="cw">
                     {content.cta}
                 </Button>
-                <Fab
-                    color="white"
-                    aria-label="play video"
-                >
-                    <PlayCircleOutlineIcon />
-                </Fab>
+                <PlayButton />
             </Box>
         </HeroSection>
     )

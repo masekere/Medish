@@ -1,10 +1,17 @@
 import { styled } from '@mui/material'
-import Box from '@mui/material/Box'
+import Stack from '@mui/material/Stack'
 
-const ButtonActions = styled(Box)({
-    height: 60,
+const ButtonActions = styled(Stack)(({ theme }) => ({
     display: 'flex',
-    gap: 16
-})
+    gap: 16,
+
+    [theme.breakpoints.up('sm')]: {
+        flexDirection: 'row'
+    },
+
+    button: {
+        height: 60,
+    }
+}));
 
 export default ButtonActions

@@ -1,9 +1,9 @@
 import Typography from '@mui/material/Typography'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 
-const AdvantagesList = ({ items, color , other }) => items.map((item, index) => (
+const AdvantagesList = ({ items, color ,sx, other }) => items.map((item, index) => (
     <Typography key={index} mt={1} color={color} {...other}>
-        <CheckCircleIcon color='primary' sx={{ verticalAlign: "middle" }} /> {item}
+        <CheckCircleIcon color='primary' sx={{ verticalAlign: "middle", ...sx }} /> {item}
     </Typography>
 ))
 

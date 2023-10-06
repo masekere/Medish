@@ -7,37 +7,37 @@ const content = {
         {
             title: 'Neurology Clinic',
             desc: 'Some neurologists receive subspecialty training focusing on a particular area of the fields, these training programs called fellowships, and one to two years.',
-            img: 'src/assets/images/services/1.jpg',
+            img: '/src/assets/images/services/1.jpg',
             icon: BloodPressureIcon
         },
         {
             title: 'Cardiology Clinic',
             desc: 'All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are trained to take care of small children...',
-            img: 'src/assets/images/services/2.jpg',
+            img: '/src/assets/images/services/2.jpg',
             icon: CardiogramIcon
         },
         {
             title: 'Pathology Clinic',
             desc: 'Pathology is the study of disease, it is the bridge between science and medicine. Also it underpins every aspect of patient care, from diagnostic testing...',
-            img: 'src/assets/images/services/3.jpg',
+            img: '/src/assets/images/services/3.jpg',
             icon: Medical2Icon
         },
         {
             title: 'Laboratory Analysis',
             desc: 'Analyzing the radon or radon progeny concentrations with passive devices, or the act of calibrating radon or radon progeny measurement devices.',
-            img: 'src/assets/images/services/4.jpg',
+            img: '/src/assets/images/services/4.jpg',
             icon: MedicineIcon
         },
         {
             title: 'Pediatric Clinic',
             desc: 'Pediatric providers see patients from birth into early adulthood to make sure children achieve stay healthy. Our care includes preventive health checkups.',
-            img: 'src/assets/images/services/5.jpg',
+            img: '/src/assets/images/services/5.jpg',
             icon: Medical3Icon
         },
         {
             title: 'Cardiac Clinic',
             desc: 'For people requiring additional follow up, the Cardiac Clinic provides rapid access to professionals specialized in diagnosing and treating heart disease.',
-            img: 'src/assets/images/services/6.jpg',
+            img: '/src/assets/images/services/6.jpg',
             icon: StethoscopeIcon
         },
     ],
@@ -47,36 +47,8 @@ export default function ServiceCardSwiper() {
     return (
         <CardSwiper 
             items={content.services}
+            sx={{mt: 8}}
             Card={ServiceCard}
             />
-        // <Box
-        //     component={Swiper}
-        //     slidesPerView={lg ? 3 : md || sm ? 2 : 1}
-        //     spaceBetween={10}
-        //     // centeredSlidesBounds={true}
-        //     pagination={{
-        //         clickable: true,
-        //     }}
-        //     modules={[Pagination]}
-        //     sx={{
-        //         p: { xs: 1, md: 2 },
-        //         '.swiper-slide': {
-        //             // background: 'red',
-        //             maxWidth: '370px'
-        //             // ...sm&&{} 
-        //         }
-        //         // class=" swiper-slide-active"
-        //     }}
-        // >
-        //     {content.services.map((service, key) => (
-        //         <SwiperSlide
-        //             styles={{
-        //                 background: 'red'
-        //             }}
-        //             key={key}>
-        //             <Card service={service} cta={content.cta} />
-        //         </SwiperSlide>
-        //     ))}
-        // </Box>
     )
 }

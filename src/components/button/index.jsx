@@ -18,6 +18,7 @@ export default function Button({ variant = 'cp', children, sx, icon = 'end', ...
 
     return (
         <MuiButton
+            className='Button'
             size={'large'}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}

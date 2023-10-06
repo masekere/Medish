@@ -124,3 +124,17 @@ export const QualifiedIcon = createSvgIcon(
     </svg>,
     'Icon'
 )
+
+export const DownloadReportIcon = createSvgIcon(
+    <svg className='download-report-icon' fill='currentColor' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+        <g><g> <g><path d="M2.12 2L2.93 1L14.93 1L15.87 2L2.12 2ZM9 14.5L3.5 9L7 9L7 7L11 7L11 9L14.5 9L9 14.5ZM17.54 2.23L16.15 0.55C15.88 0.21 15.47 0 15 0L3 0C2.53 0 2.12 0.21 1.84 0.55L0.46 2.23C0.17 2.57 0 3.02 0 3.5L0 16C0 17.1 0.9 18 2 18L16 18C17.1 18 18 17.1 18 16L18 3.5C18 3.02 17.83 2.57 17.54 2.23Z"></path></g></g></g>
+    </svg>,
+    'Icon'
+)
+
+export const InfoIcon = createSvgIcon(
+    <svg className='info-icon' fill='currentColor'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+        <g><g><g><path d="M10 10L8 10L8 4L10 4L10 10ZM9 14.3C8.28 14.3 7.7 13.72 7.7 13C7.7 12.28 8.28 11.7 9 11.7C9.72 11.7 10.3 12.28 10.3 13C10.3 13.72 9.72 14.3 9 14.3ZM12.73 0L5.27 0L0 5.27L0 12.73L5.27 18L12.73 18L18 12.73L18 5.27L12.73 0Z"></path></g></g></g>
+    </svg>,
+    'Icon'
+)

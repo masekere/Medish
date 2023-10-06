@@ -3,7 +3,7 @@ import { useMediaQuery, useTheme, Container } from "@mui/material"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
-export default function CardSwiper({ Card, items ,...other }) {
+export default function CardSwiper({ Card, items ,sx,...other }) {
     const theme = useTheme();
     const xl = useMediaQuery(theme.breakpoints.up("xl"));
     const md = useMediaQuery('@media (min-width: 850px)');
@@ -29,7 +29,7 @@ export default function CardSwiper({ Card, items ,...other }) {
             >
                 {items.map((item, key) => (
                     <SwiperSlide key={key}>
-                        <Card item={item} />
+                        <Card item={item} sx={sx} />
                     </SwiperSlide>
                 ))}
             </Box>
