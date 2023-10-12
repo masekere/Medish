@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Button from 'components/button'
+import Button from 'components/common/button'
 
 
 

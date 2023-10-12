@@ -1,7 +1,7 @@
 import PhoneIcon from '@mui/icons-material/Phone'
 import Typography from '@mui/material/Typography'
 import { Link } from 'react-router-dom'
-import Button from 'components/button'
+import Button from 'components/common/button'
 import { Box } from '@mui/material'
 
 const content = {

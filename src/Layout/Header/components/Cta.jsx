@@ -3,7 +3,7 @@ import IconButton from '@mui/material/IconButton'
 import Divider from '@mui/material/Divider'
 import Typography from '@mui/material/Typography'
 import SearchIcon from "@mui/icons-material/Search";
-import Button from 'components/button';
+import Button from 'components/common/button';
 import { Link } from "react-router-dom"
 
 const styles = {

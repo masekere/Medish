@@ -1,16 +1,14 @@
-import Testimonial from "components/Testimonial"
-import Hero from "./components/Hero"
-import Pricing from "./components/Pricing"
+import PricingPlans from "components/PricingPlans"
 import Appointment from "components/Appointment"
 import Donations from "components/Donations"
+import PricingHero from "components/Hero/PricingHero"
 
 export function Component() {
     return (
         <>
-            <Hero />
-            <Pricing />
-            <Testimonial />
-            <Appointment />
+            <PricingHero />
+            <PricingPlans />
+            <Appointment mt={0} />
             <Donations />
         </>
     )

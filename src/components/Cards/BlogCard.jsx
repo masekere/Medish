@@ -75,6 +75,10 @@ const styles = {
     }
 }
 
+const content = {
+    action: 'Read More'
+}
+
 
 const BlogCard = ({item}) => (
     <MuiCard  sx={styles.card}>
@@ -96,7 +100,7 @@ const BlogCard = ({item}) => (
             <Typography pb={.5} component={Link} variant='h4'>{item.title}</Typography>
             <Typography pt={2} color={'#8790a2'} >
                 {item.bio}
-                <PrimaryLink ml={1}>Read More</PrimaryLink>
+                <PrimaryLink ml={1}>{content.action}</PrimaryLink>
             </Typography>
         </CardContent>
     </MuiCard>

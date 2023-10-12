@@ -8,19 +8,29 @@ import { Link } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import PrimaryLink from 'components/PrimaryLink'
 import PropTypes from 'prop-types'
+import Chip from 'components/common/Chip'
+
+
 
 /** @type {import("@mui/material").SxProps} */
 const styles = {
     card: {
         position: 'relative',
         m: 2,
-        pb: 1,
-        maxWidth: "412px",
-        boxShadow: "none",
+        // pb: 1,
+        // width: '300px',
+        width: {xs: '100%', lg: 'calc(100% / 3 - 80px )'},
+        display: {sm: 'flex', lg: 'block'},
+        minWidth: {lg: 280},
+        maxWidth: {xs: 783, lg: "412px"},
+        boxShadow: "0px 5px 83px 0px rgba(9, 29, 62, 0.15)",
         transition: "0.3s ease-in-out",
-        borderRadius: '1rem',
+        borderRadius: '8px 8px 4px 4px',
         ":hover img": {
             transform: "scale3d(1, 1, 1)"
+        },
+        ":hover .social": {
+            opacity: .9
         },
         button: {
             m: { xs: 'auto', sm: 0 }
@@ -32,60 +42,36 @@ const styles = {
             maxWidth: "100%",
             height: "auto",
             transform: "scale3d(1.05, 1.05, 1)",
-
         },
 
         ".social": {
-            position: "absolute",
-            opacity: { xs: .9, xl: 0 },
-            transform: { xl: 'translateY(58px)' },
-            bottom: 0,
-            bgcolor: 'secondary.main',
+            display: {sm: 'none', lg: 'flex'},
+            // mt: '-3rem',
+            position:  "absolute",
+            opacity: { xs: .9, lg: 0 },
+            // transform: { xl: 'translateY(58px)' },
+            top: 20,
+            right: 20,
             borderRadius: '8px 8px 0 0',
             transition: '0.3s ease-in-out',
-            p: 2,
-            ml: { xs: '2rem', lg: '2.5rem' },
+            alignItems: 'center',
+            pb: 2,
+            ml: { xs: '2rem',sm: 0, lg: '2.5rem' },
+            // flexWrap: 'wrap',
             hr: {
                 borderColor: 'secondary.light'
-            },
+            }, 
+            flexDirection: 'column',           
             a: {
-                display: 'flex',
-
-                svg: {
-                    color: 'white'
-                },
-                ':hover svg': {
-                    color: 'primary.main'
-                }
-            }
-        },
-        '&:hover': {
-            '.social': {
                 opacity: .9,
-                transform: 'translateY(0)',
-            },
-            ':before': {
-                bgcolor: "secondary.main",
+                // display: 'flex',
+                // bgcolor: 'red',
+                // py: 2,
+                // flex: "1",
+                // width: 'calc(50% - 8px)',
+                // m: 0,
             }
         },
-        ':before': {
-            content: "''",
-            bgcolor: "primary.main",
-            transition: '0.3s ease-in-out',
-            position: 'absolute',
-            bottom: 0,
-            height: 20,
-            width: '100%'
-        },
-        ':after': {
-            content: "''",
-            borderRadius: '0 0 1rem 1rem',
-            bgcolor: "white",
-            position: 'absolute',
-            bottom: 5,
-            height: 15,
-            width: '100%'
-        }
     },
     media: {
         position: 'relative',
@@ -93,6 +79,10 @@ const styles = {
     },
     content: {
         px: { xs: '2rem', lg: '2.5rem' },
+
+        '.social2': {
+            display: {xs: 'none', sm: 'block', lg: 'none'}
+        }
     },
     btn: {
         px: { xs: '2rem', lg: '2.5rem' },
@@ -100,7 +90,13 @@ const styles = {
         display: 'block'
     },
 }
-const cta = "Read Me"
+const content = {
+    action: "Read More"
+}
+
+const bgColor = (color) => ({
+    background: (color ? color : '#435ba1') + '!important',
+})
 
 
 const TeamCard = ({ item }) => (
@@ -109,15 +105,15 @@ const TeamCard = ({ item }) => (
             <Box pb={7} component="img" src={item.img} alt={'team'} />
             <Stack
                 className='social'
-                direction="row"
-                spacing={2}
-                divider={<Divider orientation="vertical" flexItem />}
-
+                // direction="row"
+                spacing={1}
+                // divider={<Divider orientation="vertical" flexItem />}
             >
-                {item.social.map((item, index) => (
-                    <Box component={Link} to={item.url} key={index}>
-                        {item.icon}
-                    </Box>
+                {item.social.map(({icon, color, url}, index) => (
+                    // <Box component={Link} to={item.url} key={index}>
+                    //     {item.icon}
+                    // </Box>
+                    <Chip label={icon} key={index} component={Link} to={url} sx={bgColor(color)} variant="icon" />
                 ))}
             </Stack>
         </CardMedia>
@@ -125,8 +121,13 @@ const TeamCard = ({ item }) => (
             <Typography variant='h4'>{item.name}</Typography>
             <Typography component={Link} to={item.url} variant='underline2'>{item.category}</Typography>
             <Typography mt={1} color={'#8790a2'} >
-                {item.desc} <PrimaryLink sx={{display: 'block'}}>{cta}</PrimaryLink>
+                {item.desc} <PrimaryLink sx={{display: 'block'}}>{content.action}</PrimaryLink>
             </Typography>
+            <Stack className='social2' mt={1} direction="row" spacing={2}>
+                {item.social.map(({icon, color, url}, index) => (
+                    <Chip label={icon} key={index} component={Link} to={url} sx={bgColor(color)} variant="icon" />
+                ))}
+            </Stack>
         </CardContent>
     </Card>
 )

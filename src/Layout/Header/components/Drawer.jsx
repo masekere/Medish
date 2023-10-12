@@ -13,7 +13,8 @@ import styled from '@emotion/styled'
 import LogoDesktop from 'assets/images/logo/logo-dark.svg'
 import { useState } from 'react'
 import { Link, useLocation } from "react-router-dom"
-import Button from 'components/button'
+import Button from 'components/common/button'
+
 
 const navigationLinks = [
   ['Departments', [
@@ -115,15 +116,15 @@ const ListItem = styled(MuiListItem)({
 })
 
 const ListItemButton = styled(MuiListItemButton)({
-  //
+  // transition: 'background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+  '&.Mui-selected': {
+    background: '#d7f4f8',
+  }
 })
 
 const ListItemLink = styled(MuiListItemButton)({
   '&.Mui-selected': {
-    span: {
-      color: "#13c5dd"
-    },
-    backgroundColor: "transparent",
+    backgroundColor: "rgba(0, 0, 0, 0.04)",
   },
 })
 
@@ -155,12 +156,12 @@ const Drawer = ({ openDrawer, setDrawerOpen }) => {
         <ListItemText primary={link[0]} />
         <ListItemIcon><ExpandMore /></ListItemIcon>
       </ListItemButton>
-      <Collapse in={currentIndex === index}>
-        {link[1].map((menuLink, index) => (
-          <ListItemLink onClick={() => setDrawerOpen(!openDrawer)} component={Link} to={menuLink.path} key={index} selected={path === '/' + menuLink.path}>
-            <ListItemText primary={menuLink.name} />
-          </ListItemLink>
-        ))}
+      <Collapse timeout={500} unmountOnExit in={currentIndex === index}>
+          {link[1].map((menuLink, index) => (
+            <ListItemLink onClick={() => setDrawerOpen(!openDrawer)} component={Link} to={menuLink.path} key={index} selected={path === '/' + menuLink.path}>
+              <ListItemText primary={menuLink.name} />
+            </ListItemLink>
+          ))}
       </Collapse>
     </ListItem>
   )
@@ -184,7 +185,10 @@ const Drawer = ({ openDrawer, setDrawerOpen }) => {
       }}
       sx={{
         display: { xs: 'block', xl: 'none' },
-        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+        '& .MuiDrawer-paper': { 
+          boxSizing: 'border-box', width: drawerWidth,
+          // bgcolor: 'primary.light',
+        },
       }}
     >
       <Header />

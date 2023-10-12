@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import Header from './components/Header'
-import Form from './components/Form'
+import AppointmentForm from 'components/Forms/AppointmentForm'
+import AppointmentHeader from 'components/Headers/AppointmentHeader'
 
 const styles = {
     wrapper: {
         px: { xs: '2rem', sm: '3rem', md: '4rem', lg: '5rem' },
+        // mt: "-200px",
     },
     container: {
-        mt: "-200px",
         px: { xs: '2rem', sm: '3rem', md: '4rem', lg: '5rem' },
         boxShadow: "0px 5px 83px 0px rgba(9, 29, 62, 0.15)",
         borderRadius: '8px',
@@ -19,14 +19,17 @@ const styles = {
     },
 }
 
-export default function Appointment() {
-
+export default function Appointment({mt}) {
     return (
-            <Box sx={styles.wrapper}>
+            <Box sx={styles.wrapper} mt={mt}>
                 <Container sx={styles.container} maxWidth="xxl">
-                    <Header />
-                    <Form />
+                    <AppointmentHeader />
+                    <AppointmentForm />
                 </Container>
             </Box>
     )
+}
+
+Appointment.defaultProps = {
+  mt: '-200px'
 }

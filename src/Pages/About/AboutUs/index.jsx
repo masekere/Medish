@@ -1,20 +1,20 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Features from "./components/Features";
-import Team from "./components/Team";
+import AboutUs from "components/About/AboutUs";
+import Features from "components/Features/Features2";
 import Process from "components/Process";
 import Donations from "components/Donations";
-import Cta from "components/Cta";
+import WhyUs from "components/WhyUs";
+import AboutUsHero from "components/Hero/AboutUsHero";
+import Team from "components/Team/Team1";
 
 export function Component() {
     return (
         <>
-            <Hero />
-            <About />
+            <AboutUsHero />
+            <AboutUs />
             <Features />
             <Donations />
-            <Team />
-            <Cta />
+            <Team bgcolor={'primary.light'}  />
+            <WhyUs />
             <Process />
         </>
     )

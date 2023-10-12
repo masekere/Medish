@@ -1,0 +1,44 @@
+import Stack from '@mui/material/Stack'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import Avatar from '@mui/material/Avatar'
+import AvatarGroup from '@mui/material/AvatarGroup'
+import PhoneIcon from '@mui/icons-material/Phone'
+import Button from 'components/common/button'
+import DoctorImg from "assets/images/testimonial/5.jpg"
+import { Link } from 'react-router-dom'
+
+const content = {
+    h2: "Meet Our Doctors",
+    desc: "Our administration and staff all have exceptional skills and trained to assist you with all medical enquiries.",
+    cta: "Make Appointment",
+    phone: "01061245741",
+    call: "Call 24HR / 7Days"
+}
+
+const styles = {
+    heading: {
+        // px: {xs: '2rem',sm: '3rem',md: '4rem',lg: '5rem'}, 
+        display: 'flex',
+        flexDirection: {xs: 'column', lg: 'row'},
+        gap: 2,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        textAlign: {xs: 'center', lg: 'left'},
+    },
+    tel: {
+        fontSize: 19,
+        fontWeight: 'bold'
+    }
+}
+
+const Heading = () => (
+    <Box {...styles.heading}>
+      <Stack spacing={2}>
+        <Typography variant="h2">{content.h2}</Typography>
+        <Typography maxWidth={526} variant="body2">{content.desc}</Typography>
+      </Stack>
+    </Box>
+)
+
+export default Heading

@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import Typography from '@mui/material/Typography'
 import { Link } from 'react-router-dom'
+import Chip from 'components/common/Chip'
 
 const content = {
     Copyright: <Typography color='white' mr={'auto'} fontWeight={700}>© 2021 medisch by <PrimaryLink to={'#'}>Mgm.com</PrimaryLink>. all rights reserved.</Typography>,
@@ -12,14 +13,17 @@ const content = {
         {
             icon: <FacebookIcon />,
             url: "#",
+            color: 'rgb(72 109 181)'
         },
         {
             icon: <InstagramIcon />,
-            url: "#",
+            url: "",
+            color: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)'
         },
         {
             icon: <TwitterIcon />,
             url: "#",
+            color: 'rgb(39 164 243)'
         },
     ]
 }
@@ -33,30 +37,22 @@ const styles = {
         gap: 1.5,
         alignItems: 'center',
         display: 'flex',
-        ".socialIcon": {
-            bgcolor: 'secondary.light',
-            display: 'flex',
-            p: 1,
-            transition: '0.3s ease-in-out',
-            borderRadius: "8px 8px 0 8px",
-            color: 'white',
-            cursor: 'pointer',
-            ':hover': {
-                bgcolor: 'primary.main'
-            }
-        },
+
+        mb: 5
     },
 }
+
+const bgColor = (color) => ({
+    background: (color ? color : '#435ba1') + '!important',
+})
 
 export default function Copyright() {
     return (
         <Box sx={styles.copyright}>
             {content.Copyright}
-            {content.social.map(({ icon, url }, index) => (
-                <Box component={Link} to={url} className="socialIcon" key={index}>
-                    {icon}
-                </Box>
-            ))}
+            {content.social.map((({ icon, url, color }, index) => (
+                <Chip label={icon} key={index} component={Link} to={url} sx={bgColor(color)} variant="icon" />
+            )))}
         </Box>
     )
 }

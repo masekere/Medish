@@ -1,27 +1,27 @@
-import Hero from "Pages/Home/components/Hero";
-import About from "Pages/Home/components/About";
-import Services from "./components/Services";
-import About2 from "./components/About2";
-import Team from "./components/Team";
-import Testimonial from "./components/Testimonial";
-import Appointment from "./components/Appointment";
-import Donations from "./components/Donations";
-import Features from "./components/Features";
-import Blog from "./components/Blog";
+import About from "components/About";
+import ServicesSlider from "components/Services/ServicesSlider";
+import About2 from "components/About/About2";
+import Features from "components/Features";
+import BlogSlider from "components/Blog/BlogSlider";
+import Team from "components/Team/Team1";
+import HomeHero from "components/Hero/HomeHero";
+import Donations from "components/Donations";
+import Testimonial from "components/Testimonial";
+import Appointment from "components/Appointment";
 
 export default function Home() {
     return (
         <>
-            <Hero />
+            <HomeHero />
             <About />
-            <Services />
+            <ServicesSlider />
             <About2 />
             <Team />
             <Testimonial />
             <Appointment />
             <Donations />
             <Features />
-            <Blog />
+            <BlogSlider />
         </>
     )
 }

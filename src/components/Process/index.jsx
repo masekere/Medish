@@ -3,7 +3,7 @@ import ProcessCard from "components/Cards/ProcessCard";
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Bg from 'assets/images/background/1.jpg'
-import PrimaryIMageBackground from "components/Background/Primary";
+import PrimaryIMageBackground from "components/common/Background/Primary";
 
 const content = [
     {
@@ -54,9 +54,9 @@ const styles = {
    },
 }
 
-export default function Process() {
+export default function Process({pb}) {
     return (
-        <PrimaryIMageBackground className="Process" component={'section'} img={Bg}>   
+        <PrimaryIMageBackground pb={pb} component={'section'} img={Bg}>   
             <Container maxWidth='xl'>
                 <Box sx={styles} borderRadius={'1rem'} bgcolor={'white'} display={'flex'} flexWrap={'wrap'} border={'2px solid #e6e8eb'}>
                     {content.map((item, index) => (
@@ -66,4 +66,8 @@ export default function Process() {
             </Container>
         </PrimaryIMageBackground>
     )
+}
+
+Process.defaultProps = {
+  pb: {xs: '70px', lg: '120px'}
 }

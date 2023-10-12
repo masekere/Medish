@@ -3,7 +3,6 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import Layout from "Layout"
 import Home from "Pages/Home";
 import 'globals.css'
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -32,7 +31,7 @@ const router = createBrowserRouter([
           },
           {
             path: 'medical-services',
-            lazy: () => import('Pages/About/MedicalServices'),
+            lazy: () => import('Pages/About/Services'),
           },
           {
             path: 'pricing',

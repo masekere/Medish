@@ -1,8 +1,8 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import AdvantagesList from 'components/AdvantagesList'
+import AdvantagesList from 'components/common/AdvantagesList'
 import Divider from '@mui/material/Divider'
-import Button from 'components/button'
+import Button from 'components/common/button'
 import Stack from '@mui/material/Stack'
 
 

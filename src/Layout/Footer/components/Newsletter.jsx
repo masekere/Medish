@@ -1,4 +1,4 @@
-import Button from 'components/button'
+import Button from 'components/common/button'
 import { ListItem, TextField, Box, FormControlLabel, Checkbox, Typography } from '@mui/material'
 
 const content = {
