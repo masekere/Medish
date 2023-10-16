@@ -106,7 +106,7 @@ const content = {
 
 export default function TeamCards() {
     return (
-        <Box display={'flex'} flexWrap={'wrap'} gap={3}  mt={5}>
+        <Box pb={5} display={'flex'} flexWrap={'wrap'} gap={3}  mt={5}>
             {content.teams.map((item, index) => (
                 <TeamCard2 item={item} key={index} />
             ))}

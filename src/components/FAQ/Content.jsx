@@ -2,8 +2,6 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Accordion from 'components/common/Accordion'
 import Divider from '@mui/material/Divider'
-import Team2 from 'components/Team/Team2'
-import AppointmentForm from 'components/Forms/AppointmentForm.jsx'
 
 const content = {
     body1: 'We help create a care plan that addresses your specific condition and we are here to answer all of your questions & acknowledge your concerns. Today the hospital is recognised as a world renowned institution, not only providing outstanding care and treatment, but improving the outcomes.',
@@ -72,12 +70,5 @@ export default () => (
         <Typography mb={5}>{content.body1}</Typography>
         <Divider sx={{ borderBottomColor: 'primary.main', borderBottomWidth: 3 }} />
         <Accordion sx={{ mb: 5 }} py={1.1} items={content.accordions} />
-        {/* doesn't belong here */}
-        <Team2 />
-        <Box
-            mt={5}
-            boxShadow="0px 5px 83px 0px rgba(9, 29, 62, 0.15)"
-            children={<AppointmentForm />}
-        />
     </Box>
 )

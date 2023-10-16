@@ -5,6 +5,7 @@ import CategoryLink from 'components/CategoryLink'
 const styles = {
     bgcolor: 'primary.light',
     gap: .5,
+    flex: 1
 }
 
 const CategoryCard = ({ items }) => (
