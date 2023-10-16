@@ -23,7 +23,7 @@ import Tabs from 'components/common/Tabs';
 import { useState } from 'react';
 import Icon from "@mui/material/Icon";
 import Counter from 'components/common/Counter';
-import DepartmentHeaderCard from 'components/Cards/DepartmentHeaderCard';
+import DepartmentHeaderCard from 'components/Cards/HeroCard';
 import PresentationVideoCard from 'components/Cards/PresentationVideoCard';
 import PriceListCard from 'components/Cards/PriceListCard';
 

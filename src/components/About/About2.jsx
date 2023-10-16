@@ -48,12 +48,8 @@ const styles = {
 
 const Advantages = () => (
   <Box sx={styles.advantages}>
-    <Box>
       <AdvantagesList color={'white'} items={content.advantages[0]} />
-    </Box>
-    <Box>
       <AdvantagesList color={'white'} items={content.advantages[1]} />
-    </Box>
   </Box>
 )
 

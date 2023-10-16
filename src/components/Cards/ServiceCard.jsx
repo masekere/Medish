@@ -51,6 +51,10 @@ const styles = {
     }
 }
 
+const content = {
+    action: 'Read More'
+}
+
 export default function ServiceCard({ item, sx }) {
     return (
         <MuiCard sx={{...styles.card, ...sx}}>
@@ -60,7 +64,7 @@ export default function ServiceCard({ item, sx }) {
                 </Box>
                 <Typography pb={1} pt={5} variant='h4'>{item.title}</Typography>
                 <Typography color={'#8790a2'} >
-                    {item.desc} <PrimaryLink>Read More</PrimaryLink>
+                    {item.desc} <PrimaryLink to={item.url} >{content.action}</PrimaryLink>
                 </Typography>
             </CardContent>
             <Box sx={styles.imageContainer}>

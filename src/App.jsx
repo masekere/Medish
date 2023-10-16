@@ -31,7 +31,36 @@ const router = createBrowserRouter([
           },
           {
             path: 'medical-services',
-            lazy: () => import('Pages/About/Services'),
+            children: [
+              {
+                index: true,
+                lazy: () => import('Pages/About/Services')
+              },
+              {
+                path: 'neurology-clinic',
+                lazy: () => import('Pages/About/Services/Service/NeurologyClinic/index')
+              },
+              {
+                path: 'cardiology-clinic',
+                lazy: () => import('Pages/About/Services/Service/CardiologyClinic/index')
+              },
+              {
+                path: 'pathology-clinic',
+                lazy: () => import('Pages/About/Services/Service/PathologyClinic//index')
+              },
+              {
+                path: 'laboratory-analysis',
+                lazy: () => import('Pages/About/Services/Service/LaboratoryAnalysis/index')
+              },
+              {
+                path: 'pediatric-clinic',
+                lazy: () => import('Pages/About/Services/Service/PediatricClinic/index')
+              },
+              {
+                path: 'cardiac-clinic',
+                lazy: () => import('Pages/About/Services/Service/CardiacClinic/index')
+              },
+            ],
           },
           {
             path: 'pricing',

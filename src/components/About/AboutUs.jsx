@@ -4,8 +4,7 @@ import Box from '@mui/material/Box'
 import About1 from 'assets/images/about/1.jpg'
 import About2 from 'assets/images/about/2.jpg'
 import VideoButton from 'components/common/button/Video'
-import Button from 'components/common/button'
-import Signature from 'components/common/Signature'
+import SignatureBlock from 'components/common/SignatureBlock'
 
 const content = {
     title: 'watch our presentation online',
@@ -45,13 +44,6 @@ const ImageVideLink2 = () => (
     <Box position={'relative'}>
         <Box height={314} component="img" src={About2} alt={'About 2'} />
         <VideoButton sx={{ display: { xs: 'flex', lg: 'none' } }} to={content.url} title={content.title} />
-    </Box>
-)
-
-const SignatureBlock = () => (
-    <Box flexWrap={'wrap'} alignItems={'center'} mb={2} display={'flex'} gap={5}>
-        <Button>{content.action}</Button>
-        <Signature />
     </Box>
 )
 

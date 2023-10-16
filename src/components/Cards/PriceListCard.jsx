@@ -5,7 +5,9 @@ import Typography from '@mui/material/Typography'
 import Chip from 'components/common/Chip'
 
 const styles = {
-    width: { xs: '100%', xl: '50%' },
+    // width: { xs: '100%', xl: '50%' },
+    minWidth: {sm: 300},
+    flex: 1,
     p: '37px 40px 28px',
     borderRadius: '8px 8px 0 8px',
     bgcolor: '#f6f6f6',

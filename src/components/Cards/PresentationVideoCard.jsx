@@ -1,6 +1,6 @@
-import Box from '@mui/material/Box'
+import MuiBox from '@mui/material/Box'
 import VideoButton from 'components/common/button/Video'
-import VideoThumb from 'assets/images/video/2.jpg'
+import { styled } from '@mui/material'
 
 const content = {
     title: 'Watch Our Presentation Online',
@@ -8,8 +8,7 @@ const content = {
 
 }
 
-const styles = {
-    backgroundImage: `url(${VideoThumb})`,
+const Box = styled(MuiBox)({
     position: 'relative',
     backgroundColor: 'grey',
     borderRadius: '8px 8px 0 8px',
@@ -18,14 +17,17 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
 
+})
+
+const styles = {
     vid: {
         right: 0,
         bottom: 0
     }
 }
 
-const PresentationVideoCard = () => (
-    <Box sx={styles}>
+const PresentationVideoCard = ({VideoThumb}) => (
+    <Box sx={{backgroundImage: `url(${VideoThumb})`}}>
       <VideoButton sx={styles.vid} title={content.title} to={content.to} />
     </Box>
 )

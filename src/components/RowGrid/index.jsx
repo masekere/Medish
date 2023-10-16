@@ -1,8 +1,6 @@
 import Grid from '@mui/material/Grid'
-import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 
-/** @type {import("@mui/material").SxProps} */
 const styles = {
     sidebar: {
         maxWidth: {xl: 330},

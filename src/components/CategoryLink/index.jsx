@@ -59,9 +59,9 @@ const style2 = (count) => count ? null : ({
 })
 
 const CategoryLink = ({item}) => (
-    <Stack component={Link} to={item.to} sx={{...styles, ...style2(item.count) }}>
+    <Stack component={Link} to={item.url} sx={{...styles, ...style2(item.count) }}>
         <Box sx={styles.category}>
-            <DoubleArrowIcon /> <Typography>{item.label}</Typography>
+            <DoubleArrowIcon /> <Typography>{item.category}</Typography>
         </Box>
           {item.count && <Chip label={item.count} variant='outlined' />}
     </Stack>

@@ -4,16 +4,15 @@ import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import Button from "components/common/button";
-import VideoButton from "components/common/button/Video";
 
 const content = {
     action: 'Find A Doctor'
 }
 
-/** @type {import("@mui/material").SxProps} */
 const styles = {
     boxShadow: '0px 5px 83px 0px rgba(9, 29, 62, 0.15)',
     maxWidth: 515,
+    bgcolor: 'white',
 
     button: {
         color: 'text.secondary',
@@ -37,13 +36,13 @@ const styles = {
     }
 }
 
-const DepartmentHeaderCard = ({title, desc}) => {
+const HeroCard = ({h1, desc}) => {
   return (
     <CardContainer sx={styles}>
         <Stack direction={{md: "row"}} spacing={3} alignItems={'flex-start'}>
           <Box sx={styles.icon}><CardiogramIcon /></Box>
           <Stack>
-            <Typography variant="h1">{title}</Typography>
+            <Typography variant="h1">{h1}</Typography>
             <Typography my={2}>{desc}</Typography>
             <Box><Button variant="co">{content.action}</Button></Box>
           </Stack>
@@ -52,4 +51,5 @@ const DepartmentHeaderCard = ({title, desc}) => {
   )
 }
 
-export default DepartmentHeaderCard
+export default HeroCard
+
