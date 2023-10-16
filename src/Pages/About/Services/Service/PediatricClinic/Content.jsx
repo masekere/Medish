@@ -1,18 +1,11 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Accordion from 'components/common/Accordion'
-import Divider from '@mui/material/Divider'
 import Team2 from 'components/Team/Team2'
 import PresentationVideoCard from 'components/Cards/PresentationVideoCard'
 import VideoThumb from 'assets/images/video/1.jpg'
 import SignatureBlock from 'components/common/SignatureBlock'
 import Stack from '@mui/material/Stack'
 import AdvantagesList from 'components/common/AdvantagesList'
-import ButtonActions from 'components/common/ButtonActions'
-import Button from 'components/common/button'
-import { AidIcon, EducationIcon, MedicineIcon, StethoscopeIcon } from 'assets/Svg'
-import CoreValuesCard from 'components/Cards/CoreValuesCard'
-import PriceListCard from 'components/Cards/PriceListCard'
 import HealthTips from 'components/HealthTips'
 import HealthPlans from 'components/HealthPlans'
 import CoreValues from 'components/CoreValues'
@@ -28,7 +21,6 @@ const content = {
     },
 }
 
-/** @type {import("@mui/material").SxProps} */
 const styles = {
     introdution: {
         display: 'flex',

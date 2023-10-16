@@ -1,9 +1,9 @@
 import ServiceHero from "components/Hero/ServiceHero"
-import Siderbar from "./Sidebar"
 import Content from "./Content"
 import RowGrid from "components/RowGrid"
 import Container from '@mui/material/Container'
-import styles from "../Styles"
+import styles from "components/Styles"
+import ServicesSiderbar from "components/Sidebar/ServicesSidebar"
 
 const content = {
     hero: {
@@ -30,7 +30,7 @@ const RowGridContainer = () => (
     <Container component={'section'} disableGutters sx={styles} maxWidth="xxl">
         <RowGrid
             reversed
-            sidebar={<Siderbar />}
+            sidebar={<ServicesSiderbar />}
             content={<Content />}
         />
     </Container>
