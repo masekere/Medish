@@ -62,4 +62,13 @@ export default {
             },
         },
     },
+    tp: {
+        variant: 'text'
+    },
+    ts: {
+        variant: 'text',
+        style: {
+            color: 'secondary.main',
+        },
+    },
 }

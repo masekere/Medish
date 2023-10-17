@@ -1,5 +1,5 @@
 import Button from 'components/common/button'
-import { ListItem, TextField, Box, FormControlLabel, Checkbox, Typography } from '@mui/material'
+import { TextField, Box, FormControlLabel, Checkbox, Typography } from '@mui/material'
 
 const content = {
     header: 'Newsletter',
@@ -17,7 +17,6 @@ const styles = {
         mb: 3,
         mt: 0,
         display: 'flex',
-        // alignItems: 'flex-start',
         button: {
             height: 56.5,
             ml: '-6px',
@@ -29,7 +28,6 @@ const styles = {
     terms: {
         span: {
             fontSize: 14,
-            // color: 'white'
         },
         svg: {
             color: 'white'

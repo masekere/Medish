@@ -47,7 +47,7 @@ const containedButton = {
         transformOrigin: "right center",
         transition: "transform 0.34s cubic-bezier(0.37, 0.31, 0.31, 0.9)",
         borderRadius: "inherit",
-    }
+    },
 }
 
 export default containedButton

@@ -33,7 +33,7 @@ export default function Contact() {
             <Typography component={Link} color={'white !important'} variant='lead'>
                 {content.icon} {content.phone}
             </Typography>
-            <Button icon='start' variant='textPrimary'>
+            <Button icon='start' variant={'tp'}>
                 {content.cta}
             </Button>
         </Box>

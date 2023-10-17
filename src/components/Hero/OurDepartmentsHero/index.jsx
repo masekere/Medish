@@ -2,14 +2,15 @@ import Typography from '@mui/material/Typography'
 import slider1 from 'assets/images/sliders/2.jpg'
 import Breadcrumbs from 'components/common/Breadcrumbs';
 import HeroSection from "components/Hero/HeroContainer";
-import Button from "components/common/button";
+import PlayButton from 'components/common/button/PlayButton';
 import ButtonActions from 'components/common/ButtonActions';
+import Button from 'components/common/button';
 
 const maxWidth = { xs: 400, xl: 600 }
 
 const content = {
-    h1: 'Sets The Standard For High Quality Care And Patient Safety!!',
-    desc: 'Our doctors include highly qualified practitioners who come from a range of backgrounds and bring a diversity of skills. Besides, our staff have exceptional people skills.',
+    h1: 'Wide Range Of Medical Services For Your Family',
+    desc: 'The healt and well-being of our patients and their health care teamwill always be our priorty, so we best practices',
     breadCrumbItems: [
         {
             name: 'home',
@@ -24,22 +25,20 @@ const content = {
     action2: 'our core values',
 }
 
+
 const Actions = () => (
     <ButtonActions>
         <Button variant="cw">
             {content.action1}
         </Button>
-        <Button variant="co">
-            {content.action2}
-        </Button>
+        <PlayButton />
     </ButtonActions>
 )
 
-
-export default function AboutUsHero() {
+export default function OurDepartmentsHero() {
     return (
         <HeroSection src={slider1}>
-            <Typography sx={{fontSize: {xl: 40}}} maxWidth={maxWidth} mb={2} variant="h1">{content.h1}</Typography>
+            <Typography maxWidth={maxWidth} mb={2} variant="h1">{content.h1}</Typography>
             <Typography maxWidth={maxWidth} mb={5} variant="lead">{content.desc}</Typography>
             <Actions />
             <Breadcrumbs items={content.breadCrumbItems} />

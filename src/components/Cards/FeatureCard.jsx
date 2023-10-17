@@ -10,7 +10,7 @@ const styles = {
 
         ':hover': {
             pt: 0,
-            '.card': {
+            '.FeatureCard': {
                 bgcolor: 'white'
             },
 
@@ -74,8 +74,8 @@ const styles = {
 }
 
 const FeatureCard = ({item}) => (
-    <Box sx={styles.main}>
-        <Box className='card' sx={styles.card}>
+    <Box className='FeatureCardMain' sx={styles.main}>
+        <Box className='FeatureCard' sx={styles.card}>
             {item.icon}
             <Box sx={styles.content}>
                 <Typography variant='h4'>{item.h4}</Typography>

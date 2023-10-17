@@ -9,6 +9,7 @@ import AdvantagesList from 'components/common/AdvantagesList'
 import HealthTips from 'components/HealthTips'
 import HealthPlans from 'components/HealthPlans'
 import CoreValues from 'components/CoreValues'
+import TreatmentInfo from 'components/TreatmentInfo'
 
 const content = {
     lead: 'Pediatric providers see patients from birth into early adulthood to make sure children achieve stay healthy. Our care includes preventive health checkups. Cardiologists study the disorders of the heart, but the study of adult and child heart disorders are through different training.',
@@ -52,6 +53,7 @@ export default () => (
         <HealthPlans />
         <CoreValues />
         <HealthTips />
+        <TreatmentInfo />
         <Team2 />
     </Stack>
 )

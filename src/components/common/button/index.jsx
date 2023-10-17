@@ -2,16 +2,15 @@ import { ArrowForward, Remove } from '@mui/icons-material';
 import MuiButton from '@mui/material/Button'
 import { useState } from 'react';
 import containedStyles from 'components/common/button/contained'
-import textStyles from 'components/common/button/text'
 import { useMediaQuery } from '@mui/material';
-
-export default function Button({ variant = 'cp', children, sx, icon = 'end', ...other }) {
+import PropTypes from 'prop-types'
+  
+export default function Button({ variant, children, sx, icon, ...other }) {
     const [onHover, setHover] = useState(false);
     const lg = useMediaQuery('@media (min-width: 992px)');
 
     const variants = {
-        ...containedStyles,
-        ...textStyles
+        ...containedStyles
     }
 
     const ButtonIcon = () => onHover ? <ArrowForward /> : <Remove />
@@ -31,4 +30,16 @@ export default function Button({ variant = 'cp', children, sx, icon = 'end', ...
             {children}
         </MuiButton>
     )
+}
+
+Button.defaultProps = {
+  variant: 'cp',
+  icon: 'end'
+}
+
+Button.propTypes = {
+  variant: PropTypes.oneOf(['cp', 'cs', 'cw', 'co', 'tp', 'ts']),
+  children: PropTypes.node,
+  icon: PropTypes.string.isRequired,
+  sx: PropTypes.object,
 }

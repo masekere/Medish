@@ -28,7 +28,7 @@ const PriceListCard = ({ item }) => (
                 {item.prices.map((priceItem, index) => (
                     <Box key={index} display={'flex'} justifyContent={'space-between'}>              
                         <Typography>{priceItem.name}</Typography>
-                        <Chip label={priceItem.price} />
+                        <Chip label={'$'+priceItem.price} />
                     </Box>
                 ))}
         </Stack>

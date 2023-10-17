@@ -14,6 +14,7 @@ export default function CardSwiper({ Card, items ,sx,...other }) {
                 component={Swiper}
                 slidesPerView={xl ? 3 : md ? 2 : 1}
                 loop
+                // spaceBetween={'-1rem'}
                 pagination={{
                     clickable: true,
                 }}
@@ -23,7 +24,11 @@ export default function CardSwiper({ Card, items ,sx,...other }) {
                     '.swiper-slide': {
                         display: 'flex',
                         justifyContent: 'center',
-                    }
+                    },
+                    pt: 10,
+                    mt: '-5rem',
+                    px: '3rem',
+                    mx: '-3rem'
                 }}
                 {...other}
             >
