@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import ProductCard from 'components/Cards/ProductCard'
 
-const productImg = (index) => `/src/assets/images/shop/grid/${index}.jpg`
+const productImg = (index) => `https://ucarecdn.com/d3441e3e-e58d-4e81-90ff-9e9ed3dc4abc/assets_images_shop_grid_${index}.jpg`
 
 
 const content = {
