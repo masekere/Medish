@@ -2,7 +2,7 @@ import colors from "assets/theme/base/colors";
 import theme from "assets/theme/base/initialTheme";
 import breakpoints from "assets/theme/base/breakpoints";
 
-const {values: {xs, sm, md, lg, xl, xxl}} = breakpoints
+const {values: {md, lg, xl}} = breakpoints
 
 const {primary, secondary, grey} = colors
 
@@ -80,13 +80,6 @@ export default {
     h4: {
         ...headingStyle,
         fontSize: "21px"
-    },
-    primaryLink: {
-        fontWeight: 'bold',
-        color: primary.main + '!important',
-        ':hover': {
-            color: secondary.main + '!important'
-        }
     },
     primaryLink: {
         fontWeight: 'bold',

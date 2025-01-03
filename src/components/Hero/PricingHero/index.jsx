@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Bg from 'assets/images/sliders/12.jpg'
+const Bg = 'https://ucarecdn.com/48a3b9ce-8fcf-4af5-8e56-0234fc2d642b/assets_images_sliders_12.jpg';
 import Breadcrumbs from 'components/common/Breadcrumbs';
 import HeroSection from "components/Hero/HeroContainer";
 import Actions from './Actions';

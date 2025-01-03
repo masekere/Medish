@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
-import SignatureImg from 'assets/images/signature/1.png'
+const SignatureImg = 'https://ucarecdn.com/18f9c8da-f152-46f8-baa5-2bce4aa9daa1/assets_images_signature_1.png';
 
 const content = {
     h5: 'John Winston',

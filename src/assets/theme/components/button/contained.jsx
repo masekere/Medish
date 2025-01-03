@@ -23,6 +23,7 @@ const containedButton = {
     '&:hover': {
         // boxShadow: 'none',
         background: '#13c5dd',
+        // color: 'white !important',
         // svg: {
         //     transition: "all 1s ease-in-out",  
         //     animation: "fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both",

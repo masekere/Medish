@@ -18,7 +18,7 @@ const styles = {
 const cta = {
   timetable: {
     name: "View Doctor's Timetable",
-    path: "/doctors"
+    path: "/doctors/timetable"
   },
   appointment: {
     name: "Make Apppointement",

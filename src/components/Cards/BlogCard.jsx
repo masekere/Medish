@@ -100,14 +100,14 @@ const BlogCard = ({item}) => (
             <Typography pb={.5} component={Link} variant='h4'>{item.title}</Typography>
             <Typography pt={2} color={'#8790a2'} >
                 {item.bio}
-                <PrimaryLink ml={1}>{content.action}</PrimaryLink>
+                <PrimaryLink to={item.url}  ml={1}>{content.action}</PrimaryLink>
             </Typography>
         </CardContent>
     </MuiCard>
 )
 
 BlogCard.propTypes = {
-  propName: PropTypes.string
+  item: PropTypes.object.isRequired
 }
 
 export default BlogCard

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const content = {
     service: "Delivering tomorrow’s health care for your family.",
     action: "View Doctors' Timetable",
+    to: '/doctors/timetable'
 }
 
 const Cta = () => (
@@ -12,7 +13,7 @@ const Cta = () => (
         <Typography component={'span'} fontWeight={'bold'}>
             {content.service}
         </Typography>
-        <Typography component={Link} variant="underline">
+        <Typography component={Link} to={content.to} variant="underline">
             {content.action}
         </Typography>
     </Box>

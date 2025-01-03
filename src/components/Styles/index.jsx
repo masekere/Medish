@@ -1,4 +1,4 @@
-import EmergencyCasesCardImg from 'assets/images/blog/sidebar/reservation.jpg'
+const EmergencyCasesCardImg = 'https://ucarecdn.com/9d646c4b-3b99-49a8-a254-250ca46e281e/assets_images_blog_sidebar_reservation.jpg';
 
 const styles = {
     px: {xs: '2rem',sm: '3rem',md: '4rem',lg: '5rem'},

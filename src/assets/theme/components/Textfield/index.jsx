@@ -25,7 +25,7 @@ export default {
             },
             '.MuiInputBase-root.Mui-focused': {
               '.MuiOutlinedInput-notchedOutline': {
-                borderColor: primary.main
+                // borderColor: primary.main
               },
             },
             '.MuiInputBase-root': {

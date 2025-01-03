@@ -1,5 +1,5 @@
 import RowGrid from "components/RowGrid"
-import EmergencyCasesCardImg from 'assets/images/blog/sidebar/reservation.jpg'
+const EmergencyCasesCardImg = 'https://ucarecdn.com/9d646c4b-3b99-49a8-a254-250ca46e281e/assets_images_blog_sidebar_reservation.jpg';
 import Siderbar from "./Sidebar"
 import Content from "./Content"
 import Container from '@mui/material/Container'

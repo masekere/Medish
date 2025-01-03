@@ -3,9 +3,8 @@ import Box from '@mui/material/Box'
 import CardContainer from './CardContainer'
 import Stack from '@mui/material/Stack'
 
-
 const RecentPostsCard = ({ item }) => (
-    <CardContainer bgcolor={'primary.light'}>
+    <CardContainer width={'100%'} bgcolor={'primary.light'}>
         <Typography mb={3} variant='h5'>{item.h5}</Typography>
         <Stack spacing={1.5}>
             {item.posts.map((item, index) => (

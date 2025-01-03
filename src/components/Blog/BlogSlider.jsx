@@ -1,11 +1,11 @@
 import Box from '@mui/material/Box'
 import BlogHeader from 'components/Headers/BlogHeader'
-import Blog1 from "assets/images/blog/grid/1.jpg"
-import Blog2 from "assets/images/blog/grid/2.jpg"
-import Blog3 from "assets/images/blog/grid/3.jpg"
-import Blog4 from "assets/images/blog/grid/4.jpg"
-import Blog5 from "assets/images/blog/grid/5.jpg"
-import Blog6 from "assets/images/blog/grid/6.jpg"
+const Blog1 = 'https://ucarecdn.com/77c5fdee-f1de-42d1-ba79-ed8f5398811d/assets_images_blog_grid_1.jpg';
+const Blog2 = 'https://ucarecdn.com/ef331355-bbfc-4e0e-a441-75945910cec6/assets_images_blog_grid_2.jpg';
+const Blog3 = 'https://ucarecdn.com/e19c17a3-5ff6-419e-a164-955c6d1a8936/assets_images_blog_grid_3.jpg';
+const Blog4 = 'https://ucarecdn.com/70eff9c6-519b-47ab-93fa-6a323b3cda83/assets_images_blog_grid_4.jpg';
+const Blog5 = 'https://ucarecdn.com/ea4c2052-1474-4e75-9177-bc22a2a89bad/assets_images_blog_grid_5.jpg';
+const Blog6 = 'https://ucarecdn.com/c363bcbc-c8c1-436f-b39e-b41a46bf8a04/assets_images_blog_grid_6.jpg';
 import BlogCard from 'components/Cards/BlogCard'
 import CardSwiper from 'components/Cards/CardSwiper'
 

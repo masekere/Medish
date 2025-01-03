@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, Fab } from "@mui/material";
-import slider2 from 'assets/images/sliders/13.jpg'
+const slider2 = 'https://ucarecdn.com/44646e01-f3a2-473b-872f-3e459f269610/assets_images_sliders_13.jpg';
 import Button from "components/common/button";
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 

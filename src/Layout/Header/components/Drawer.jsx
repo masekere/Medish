@@ -10,7 +10,7 @@ import MuiStack from '@mui/material/Stack'
 import ExpandMore from "@mui/icons-material/ExpandMore"
 import MenuOpen from "@mui/icons-material/MenuOpen"
 import styled from '@emotion/styled'
-import LogoDesktop from 'assets/images/logo/logo-dark.svg'
+const LogoDesktop = 'https://ucarecdn.com/40b2eab7-4caf-42fb-9060-da412555c196/assets_images_logo_logodark.svg';
 import { useState } from 'react'
 import { Link, useLocation } from "react-router-dom"
 import Button from 'components/common/button'

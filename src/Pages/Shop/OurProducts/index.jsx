@@ -1,8 +1,12 @@
-import { Box } from "@mui/material";
+import OurProductsHero from "components/Hero/OurProductsHero"
+import OurProducts from "components/OurProducts"
 
 export function Component() {
     return (
-        <Box>OurProducts</Box>
+        <>
+            <OurProductsHero />
+            <OurProducts />
+        </>
     )
 }
 

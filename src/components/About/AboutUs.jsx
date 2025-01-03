@@ -1,14 +1,13 @@
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
-import About1 from 'assets/images/about/1.jpg'
-import About2 from 'assets/images/about/2.jpg'
+const About1 = 'https://ucarecdn.com/7659d218-f94c-4c84-8729-9488d13b21ee/assets_images_about_1.jpg';
+const About2 = 'https://ucarecdn.com/63549708-3ec1-4a85-9f32-ee02553cabfc/assets_images_about_2.jpg';
 import VideoButton from 'components/common/button/Video'
 import SignatureBlock from 'components/common/SignatureBlock'
 
 const content = {
     title: 'watch our presentation online',
-    url: '#',
     h2: 'Caring For The Health And Well Being Of You And Your Family.',
     body1: 'We provide all aspects of medical practice for your family, including general check-ups or assisting with injuries.',
     body2: 'We will work with you to develop individualised care plans, including management of chronic diseases. If we cannot assist, we can provide referrals or advice about the type of practitioner you require. We treat all enquiries sensitively and in the strictest confidence.',

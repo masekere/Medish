@@ -1,7 +1,7 @@
 import { styled, Typography } from '@mui/material'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
-import Img from 'assets/images/departments/1.jpg'
+const Img = 'https://ucarecdn.com/dca74b71-6e8e-4810-9a10-6b635bcd4a74/assets_images_departments_1.jpg';
 import PrimaryLink from 'components/PrimaryLink'
 import AdvantagesList from 'components/common/AdvantagesList'
 

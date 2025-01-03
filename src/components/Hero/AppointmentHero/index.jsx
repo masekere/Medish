@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import slider1 from 'assets/images/sliders/4.jpg'
+const slider1 = 'https://ucarecdn.com/b933cc50-a8f0-49de-a13d-5f5106eea01e/assets_images_sliders_4.jpg';
 import Breadcrumbs from 'components/common/Breadcrumbs';
 import Button from "components/common/button";
 import HeroSection from "components/Hero/HeroContainer";

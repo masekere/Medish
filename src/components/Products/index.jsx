@@ -1,9 +1,9 @@
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
-import Product1 from "assets/images/shop/thumb/1.jpg"
-import Product2 from "assets/images/shop/thumb/2.jpg"
-import Product3 from "assets/images/shop/thumb/3.jpg"
+const Product1 = 'https://ucarecdn.com/00e7bb06-011d-4899-baa5-9b070b817fb1/assets_images_shop_thumb_1.jpg';
+const Product2 = 'https://ucarecdn.com/d2dd057e-2059-490d-a1d2-a3a7ef944c5f/assets_images_shop_thumb_2.jpg';
+const Product3 = 'https://ucarecdn.com/a16c7974-84e0-45c1-8637-f9bf32cc0876/assets_images_shop_thumb_3.jpg';
 import CardContainer from 'components/Cards/CardContainer'
 
 const content = {

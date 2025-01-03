@@ -1,9 +1,10 @@
 import MuiTabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
-import { styled } from '@mui/material/styles'
+import { styled, useTheme } from '@mui/material/styles'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
+import { useMediaQuery } from '@mui/material'
 
 const StyledTabs = styled(MuiTabs)({
   position: "relative",
@@ -12,7 +13,7 @@ const StyledTabs = styled(MuiTabs)({
   minHeight: "unset",
   padding: 4,
   marginTop: 12,
-  width: 'max-content',
+  // width: 'max-content',
 
   ".MuiTabs-fixed": {
     overflow: "unset !important",
@@ -27,12 +28,16 @@ const StyledTabs = styled(MuiTabs)({
   ".MuiTabs-indicator": {
     height: "100%",
     borderRadius: 8,
-    backgroundColor: 'white',
+    backgroundColor: '#13c5dd',
     boxShadow: '0rem 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06)',
     transition: "all 500ms ease",
   },
   "&.MuiTabs-vertical .MuiTabs-indicator": {
     width: "100%",
+  },
+  '.Mui-selected': {
+    color: 'white !important',
+    // backgroundColor: 'red'
   },
 
   button: {
@@ -58,14 +63,17 @@ const StyledTabs = styled(MuiTabs)({
 })
 
 
-export default function Tabs({items, setTabIndex, tabIndex}) {
+export default function Tabs({ items, setTabIndex, tabIndex }) {
+  const theme = useTheme();
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const handleTabChange = (e, currentValue) => {
     setTabIndex(currentValue)
-}
+  }
+
   return (
     <AppBar elevation={0} position="static" color='transparent'>
-      <StyledTabs value={tabIndex} onChange={handleTabChange}>
-        {items.map(({label, icon}, index) => (
+      <StyledTabs orientation={sm ? 'horizontal' : 'vertical'} value={tabIndex} onChange={handleTabChange}>
+        {items.map(({ label, icon }, index) => (
           <Tab label={label} icon={icon} key={index} />
         ))}
       </StyledTabs>

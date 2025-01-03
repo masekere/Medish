@@ -1,5 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider, createTheme } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import Layout from "Layout"
 import Home from "Pages/Home";
 import 'globals.css'
@@ -87,11 +87,24 @@ const router = createBrowserRouter([
             path: 'timetable',
             lazy: () => import('Pages/Doctors/Timetable'),
           },
+          {
+            path: 'single-doctor',
+            lazy: () => import('Pages/Doctors/Doctor'),
+          },
         ]
       },
       {
         path: 'blog',
-        lazy: () => import('Pages/Blog'),
+        children: [
+          {
+            index: true,
+            lazy: () => import('Pages/Blogs/OurBlogs'),
+          },
+          {
+            path: 'single-blog',
+            lazy: () => import('Pages/Blogs/Blog'),
+          },
+        ]
       },
       {
         path: 'shop',
@@ -99,6 +112,10 @@ const router = createBrowserRouter([
           {
             index: true,
             lazy: () => import('Pages/Shop/OurProducts')
+          },
+          {
+            path: 'single-product',
+            lazy: () => import('Pages/Shop/SingleProduct')
           },
           {
             path: 'cart',
@@ -160,7 +177,6 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -171,3 +187,8 @@ function App() {
 }
 
 export default App
+
+/* 
+1 John 2:4
+Isaiah 1:15-17
+*/

@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Team2 from 'components/Team/Team2'
 import PresentationVideoCard from 'components/Cards/PresentationVideoCard'
-import VideoThumb from 'assets/images/video/2.jpg'
+const VideoThumb = 'https://ucarecdn.com/016b9d49-629c-46d5-b633-309d903c95d1/assets_images_video_2.jpg';
 import Stack from '@mui/material/Stack'
 import AdvantagesList from 'components/common/AdvantagesList'
 import HealthTips from 'components/HealthTips'

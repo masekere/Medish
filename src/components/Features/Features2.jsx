@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
-import Bg from 'assets/images/background/1.jpg'
+const Bg = 'https://ucarecdn.com/9f006919-f7a9-4d2f-a8d2-275421671389/assets_images_background_1.jpg';
 import PrimaryIMageBackground from 'components/common/Background/Primary'
 import { Link } from 'react-router-dom'
 import ButtonActions from 'components/common/ButtonActions'

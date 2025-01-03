@@ -45,13 +45,15 @@ const styles = {
         },
 
         ".social": {
-            display: {sm: 'none', lg: 'flex'},
+            // display: {sm: 'none', lg: 'flex'},
             // mt: '-3rem',
+            // transform: 'scale(0.7)',
             position:  "absolute",
             opacity: { xs: .9, lg: 0 },
             // transform: { xl: 'translateY(58px)' },
             top: 20,
-            right: 20,
+            right: {xs: 20, sm: 'auto', lg: 20},
+            left: {sm: 20, lg: 'auto'},
             borderRadius: '8px 8px 0 0',
             transition: '0.3s ease-in-out',
             alignItems: 'center',
@@ -64,6 +66,7 @@ const styles = {
             flexDirection: 'column',           
             a: {
                 opacity: .9,
+                transform: 'scale(0.7)'
                 // display: 'flex',
                 // bgcolor: 'red',
                 // py: 2,
@@ -106,7 +109,7 @@ const TeamCard = ({ item }) => (
             <Stack
                 className='social'
                 // direction="row"
-                spacing={1}
+                // spacing={1}
                 // divider={<Divider orientation="vertical" flexItem />}
             >
                 {item.social.map(({icon, color, url}, index) => (
@@ -123,11 +126,11 @@ const TeamCard = ({ item }) => (
             <Typography mt={1} color={'#8790a2'} >
                 {item.desc} <PrimaryLink sx={{display: 'block'}}>{content.action}</PrimaryLink>
             </Typography>
-            <Stack className='social2' mt={1} direction="row" spacing={2}>
+            {/* <Stack className='social2' mt={1} direction="row" spacing={2}>
                 {item.social.map(({icon, color, url}, index) => (
                     <Chip label={icon} key={index} component={Link} to={url} sx={bgColor(color)} variant="icon" />
                 ))}
-            </Stack>
+            </Stack> */}
         </CardContent>
     </Card>
 )

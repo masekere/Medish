@@ -1,7 +1,7 @@
 
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import WorldMapImg from "assets/images/background/world-map.png"
+const WorldMapImg = 'https://ucarecdn.com/011b90b3-8e31-499d-90b7-bc36e4e7fc46/assets_images_background_worldmap.png';
 import Accordion from 'components/common/Accordion';
 import Button from '@mui/material/Button'
 import FavoriteIcon from "@mui/icons-material/Favorite";

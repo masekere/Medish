@@ -1,9 +1,7 @@
 import Box from '@mui/material/Box'
-import Fab from '@mui/material/Fab'
 import Typography from '@mui/material/Typography'
-import slider1 from 'assets/images/sliders/2.jpg'
+const slider1 = 'https://ucarecdn.com/a9e291be-1758-46f4-a227-243f78a9e04c/assets_images_sliders_2.jpg';
 import Button from "components/common/button";
-import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import HeroSection from "components/Hero/HeroContainer";
 import PlayButton from 'components/common/button/PlayButton';
 

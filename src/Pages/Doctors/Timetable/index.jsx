@@ -1,8 +1,12 @@
-import { Box } from "@mui/material";
+import DoctorsTimeTableHero from "components/Hero/DoctorsTimeTableHero"
+import TimeTable from "components/Timetable"
 
 export function Component() {
     return (
-        <Box>Timetable</Box>
+       <>
+        <DoctorsTimeTableHero />
+        <TimeTable />
+       </>
     )
 }
 

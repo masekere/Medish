@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography'
 /** @type {import("@mui/material").SxProps} */
 const styles = {
     bgcolor: 'primary.light',
+    width: '100%',
 
     search: {
         bgcolor: 'rgb(255 255 255 / 80%)',

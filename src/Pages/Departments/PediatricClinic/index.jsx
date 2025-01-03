@@ -3,7 +3,7 @@ import RowGrid from "components/RowGrid"
 import Container from '@mui/material/Container'
 import styles from "components/Styles"
 import DepartmentsHero from "components/Hero/DepartmentsHero copy"
-import DepartmentsSiderbar from "components/Sidebar/DepartmentsSidebar"
+import DepartmentsSiderbar from "components/Sidebar/DoctorSidebar"
 
 const content = {
     hero: {

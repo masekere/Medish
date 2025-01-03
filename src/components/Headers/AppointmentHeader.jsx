@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
-import ContactImg from "assets/images/contact/1.jpg"
-import Client1 from "assets/images/clients/1.png"
-import Client2 from "assets/images/clients/2.png"
-import Client3 from "assets/images/clients/3.png"
+const ContactImg = 'https://ucarecdn.com/a607fc24-b3ef-4d84-806a-c2352ad072ab/assets_images_contact_1.jpg';
+const Client1 = 'https://ucarecdn.com/f9d1a532-0b89-4b35-9c93-3fe4123957e4/assets_images_clients_1.png';
+const Client2 = 'https://ucarecdn.com/bb495202-2d56-4c25-a8b5-5b4524884d84/assets_images_clients_2.png';
+const Client3 = 'https://ucarecdn.com/b8465350-5034-4d4b-aca3-3c42f477fa34/assets_images_clients_3.png';
 
 const content = {
     h3: "We Accept All Major Insurance Plans",

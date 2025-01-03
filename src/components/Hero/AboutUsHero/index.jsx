@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography'
-import slider1 from 'assets/images/sliders/2.jpg'
+const slider1 = 'https://ucarecdn.com/a9e291be-1758-46f4-a227-243f78a9e04c/assets_images_sliders_2.jpg';
 import Breadcrumbs from 'components/common/Breadcrumbs';
 import HeroSection from "components/Hero/HeroContainer";
 import Button from "components/common/button";

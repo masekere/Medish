@@ -1,8 +1,8 @@
 import {Stack, styled } from '@mui/material'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import WavyBg from "assets/images/background/3.jpg"
-import Image from "assets/images/video/2.jpg"
+const WavyBg = 'https://ucarecdn.com/507dcb5f-ae42-4f9b-b409-ec53b475cf1b/assets_images_background_3.jpg';
+const Image = 'https://ucarecdn.com/016b9d49-629c-46d5-b633-309d903c95d1/assets_images_video_2.jpg';
 import { Link } from 'react-router-dom'
 
 const UnderlineLink = styled((props) => (

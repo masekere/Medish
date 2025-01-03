@@ -1,8 +1,8 @@
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import WavyBg from "assets/images/background/wavy-pattern.png"
-import Image from "assets/images/video/4.jpg"
+const WavyBg = 'https://ucarecdn.com/6ea90580-c86d-41ee-933b-c6c1b70e0d7c/assets_images_background_wavypattern.png';
+const Image = 'https://ucarecdn.com/a552240f-d28e-44f6-984f-f42516ae5571/assets_images_video_4.jpg';
 import AdvantagesList from 'components/common/AdvantagesList'
 import EmergencyCasesCard from 'components/Cards/EmergencyCasesCard'
 

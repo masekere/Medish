@@ -5,7 +5,7 @@ import Avatar from '@mui/material/Avatar'
 import AvatarGroup from '@mui/material/AvatarGroup'
 import PhoneIcon from '@mui/icons-material/Phone'
 import Button from 'components/common/button'
-import DoctorImg from "assets/images/testimonial/5.jpg"
+const DoctorImg = 'https://ucarecdn.com/64c37be7-87bf-4823-8202-243f72434f52/assets_images_testimonial_5.jpg';
 import { Link } from 'react-router-dom'
 
 const content = {

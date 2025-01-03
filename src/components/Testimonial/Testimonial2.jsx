@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
-import thumb1 from "assets/images/testimonial/1.jpg"
-import TestimonialImg from "assets/images/testimonial/image.png"
+const thumb1 = 'https://ucarecdn.com/396a1bc3-a6a2-476f-8fc6-3df2243e49d4/assets_images_testimonial_1.jpg';
+const TestimonialImg = 'https://ucarecdn.com/954f3bca-a044-4645-b48b-0b00267af2dc/assets_images_testimonial_image.png';
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import { FormatQuote, FormatQuoteRounded } from '@mui/icons-material'

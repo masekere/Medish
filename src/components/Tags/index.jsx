@@ -20,7 +20,7 @@ const Tags = ({ items }) => (
         <Typography variant='h5'>{items.h5}</Typography>
         <Box sx={styles.tags}>
             {items.tags.map((item, index) => (
-                <Chip label={item} key={index} variant='outlined' component={Link} to={'/doctors'} />
+                <Chip label={item.name} key={index} variant='outlined' component={Link} to={item.url} />
             ))}
         </Box>
     </CardContainer>

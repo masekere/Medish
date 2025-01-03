@@ -1,6 +1,6 @@
 import Breadcrumbs from "components/common/Breadcrumbs";
 import HeroContainer from "components/Hero/HeroContainer";
-import Bg from 'assets/images/page-titles/3.jpg'
+const Bg = 'https://ucarecdn.com/4c28715b-52a7-4330-8b87-220d93b61d8f/assets_images_pagetitles_3.jpg';
 import HeroCard from "components/Cards/HeroCard";
 import Box from '@mui/material/Box'
 
