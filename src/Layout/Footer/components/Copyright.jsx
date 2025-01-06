@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import Chip from 'components/common/Chip'
 
 const content = {
-    Copyright: <Typography color='white' mr={'auto'} fontWeight={700}>© 2023 medisch by <PrimaryLink to={'#'}>Mgm.com</PrimaryLink>. all rights reserved.</Typography>,
+    Copyright: <Typography color='white' mr={'auto'} fontWeight={700}>© 2025 medisch by <PrimaryLink to={'#'}>Mgm.com</PrimaryLink>. all rights reserved.</Typography>,
     social: [
         {
             icon: <FacebookIcon />,
